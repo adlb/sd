@@ -1,0 +1,17 @@
+<?
+setlocale(LC_TIME, 'fr_FR');
+$db = mysql_connect("server", "name", "pass") or die("no db connection. ");
+if ($modegeneral=="sandbox") {$prefixe_database = 'sandBox_';} else {$prefixe_database ='';};
+
+mysql_select_db("speeddating_sp", $db);
+mysql_query("SET NAMES UTF8"); 
+
+$adminSitePassword='';
+
+$mailHost = ''; 
+$mailUsername = '';  
+$mailPassword = '';  
+
+$mailFromSoiree = '';
+$mailFromSoireeSandBox = '';
+?>
